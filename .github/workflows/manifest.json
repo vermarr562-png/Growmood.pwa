@@ -1,0 +1,9 @@
+{
+"name":"Growmood",
+"short_name":"Growmood",
+"theme_color":"#0a57ff",
+"background_color":"#ffffff",
+"display":"standalone",
+"start_url":"/",
+"icons":[]
+}
