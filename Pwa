@@ -1,0 +1,116 @@
+<!-- Growmood Full Working Website + Contact + UPI + Mail + Feedback + Functional Form --><!-- index.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growmood Cyber Café</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Growmood Cyber Café</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="apply.html">Apply</a>
+      <a href="upload.html">Upload Docs</a>
+      <a href="contact.html">Contact</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>Online Cyber Café Services</h2>
+    <p>Fast • Secure • 24/7 Online Support</p>
+    <a class="btn" href="apply.html">Apply Now</a>
+  </section>  <section class="services-grid">
+    <div class="service-card">Aadhar Update</div>
+    <div class="service-card">PAN Apply</div>
+    <div class="service-card">Online Form Fill</div>
+    <div class="service-card">Photo/Signature Edit</div>
+    <div class="service-card">UPI Payment Help</div>
+  </section><a class="whatsapp-btn" href="https://wa.me/918750601261">WhatsApp</a>
+
+  <script src="sw.js"></script></body>
+</html><!-- services.html --><!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="navbar"><h1>Our Services</h1></header>
+<ul class="service-list">
+<li>Aadhar Card Update</li>
+<li>PAN Card Apply</li>
+<li>Online Form Filling</li>
+<li>Photo/Signature Editing</li>
+<li>Resume Making</li>
+<li>Cyber Cafe Document Works</li>
+</ul>
+</body>
+</html><!-- apply.html (WORKING FORM) --><!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Now</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar"><h1>Apply Now</h1></header>  <form action="https://formsubmit.co/growmood.in@gmail.com" method="POST" class="form-box">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="number" name="phone" placeholder="Phone Number" required />
+    <input type="text" name="service" placeholder="Service Required" required />
+    <textarea name="details" placeholder="Extra Details"></textarea>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</body>
+</html><!-- upload.html --><!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Documents</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="navbar"><h1>Upload Documents</h1></header>
+<form action="https://formsubmit.co/growmood.in@gmail.com" method="POST" enctype="multipart/form-data" class="form-box">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="file" name="document" required />
+  <button type="submit" class="btn">Upload</button>
+</form>
+</body>
+</html><!-- contact.html --><!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="navbar"><h1>Contact Us</h1></header>
+<section class="contact-box">
+  <p><b>Phone:</b> 8750601261</p>
+  <p><b>Email:</b> growmood.in@gmail.com</p>
+  <p><b>UPI:</b> 7065322245@ptaxis</p>
+</section>
+</body>
+</html><!-- feedback.html --><!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="navbar"><h1>Feedback</h1></header>
+<form action="https://formsubmit.co/growmood.in@gmail.com" method="POST" class="form-box">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <textarea name="feedback" placeholder="Your Feedback" required></textarea>
+  <button type="submit" class="btn">Send</button>
+</form>
+</body>
+</html><!-- style.css -->body { margin:0; font-family: Arial; background:#f2f6ff; } .navbar { background:#002dff; padding:15px; color:#fff; text-align:center; } .navbar a { color:white; margin:0 10px; text-decoration:none; } .hero { padding:40px; text-align:center; background:white; } .btn { background:#002dff; padding:12px 25px; color:white; border-radius:8px; border:none; text-decoration:none; cursor:pointer; } .services-grid { display:grid; grid-template-columns:1fr 1fr; gap:15px; padding:20px; } .service-card { background:white; padding:20px; border-radius:12px; } .whatsapp-btn { position:fixed; right:20px; bottom:20px; background:#25D366; color:white; padding:15px; border-radius:50%; text-decoration:none; } .form-box { padding:20px; display:flex; flex-direction:column; gap:15px; } .form-box input, .form-box textarea { padding:12px; border-radius:8px; border:1px solid #ccc; } .contact-box { padding:20px; background:white; margin:20px; border-radius:10px; }
+
+<!-- manifest.json -->{ "name": "Growmood Cyber Café", "short_name": "Growmood", "start_url": "index.html", "display": "standalone", "background_color": "#ffffff", "theme_color": "#002dff", "icons": [ { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }, { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" } ] }
+
+<!-- sw.js -->self.addEventListener("fetch", e => { e.respondWith(fetch(e.request)); });
